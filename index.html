@@ -4,273 +4,106 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Gunesh Patil | Web Developer</title>
-
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background: #0b1120;
-  color: white;
-  line-height: 1.6;
-}
-
-header {
-  padding: 20px 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #111a2e;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.logo {
-  font-size: 25px;
-  font-weight: bold;
-  color: #38bdf8;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 15px;
-  font-size: 14px;
-}
-
-nav a:hover {
-  color: #38bdf8;
-}
-
-.hero {
-  min-height: 75vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 50px 20px;
-}
-
-.hero h1 {
-  font-size: clamp(38px, 8vw, 65px);
-  margin: 15px 0;
-}
-
-.hero h1 span {
-  color: #38bdf8;
-}
-
-.hero h3 {
-  color: #cbd5e1;
-}
-
-.hero p {
-  color: #cbd5e1;
-  max-width: 600px;
-  margin-top: 10px;
-}
-
-.btn {
-  display: inline-block;
-  background: #0284c7;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 8px;
-  text-decoration: none;
-  margin-top: 22px;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #0369a1;
-  transform: translateY(-3px);
-}
-
-section {
-  padding: 65px 8%;
-}
-
-h2 {
-  text-align: center;
-  color: #38bdf8;
-  font-size: 32px;
-  margin-bottom: 30px;
-}
-
-.about {
-  text-align: center;
-  max-width: 750px;
-  margin: auto;
-  color: #cbd5e1;
-}
-
-.skills {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.skill {
-  background: #1e293b;
-  padding: 15px 25px;
-  border-radius: 10px;
-  border: 1px solid #334155;
-}
-
-.project {
-  max-width: 650px;
-  margin: auto;
-  background: #172238;
-  padding: 25px;
-  border-radius: 15px;
-  border: 1px solid #334155;
-}
-
-.project h3 {
-  color: #38bdf8;
-}
-
-.project p {
-  color: #cbd5e1;
-  margin-top: 10px;
-}
-
-.contact-text {
-  text-align: center;
-  color: #cbd5e1;
-}
-
-footer {
-  text-align: center;
-  padding: 25px;
-  background: #111a2e;
-  color: #94a3b8;
-}
-
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  nav a {
-    margin: 0 7px;
-    font-size: 13px;
-  }
-
-  section {
-    padding: 50px 6%;
-  }
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#0b1120;color:white;line-height:1.6}
+header{padding:20px 8%;display:flex;justify-content:space-between;align-items:center;background:#111a2e;position:sticky;top:0;z-index:10}
+.logo{font-size:25px;font-weight:bold;color:#38bdf8}
+nav a{color:white;text-decoration:none;margin-left:15px;font-size:14px}
+nav a:hover{color:#38bdf8}
+.hero{min-height:75vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:50px 20px}
+.hero h1{font-size:clamp(38px,8vw,65px);margin:15px 0}
+.hero h1 span{color:#38bdf8}
+.hero h3{color:#cbd5e1}
+.hero p{color:#cbd5e1;max-width:600px;margin-top:10px}
+.btn{display:inline-block;background:#0284c7;color:white;padding:12px 25px;border-radius:8px;text-decoration:none;margin-top:22px;transition:.3s}
+.btn:hover{background:#0369a1;transform:translateY(-3px)}
+section{padding:65px 8%}
+h2{text-align:center;color:#38bdf8;font-size:32px;margin-bottom:30px}
+.about{text-align:center;max-width:750px;margin:auto;color:#cbd5e1}
+.skills{display:flex;justify-content:center;flex-wrap:wrap;gap:15px}
+.skill{background:#1e293b;padding:15px 25px;border-radius:10px;border:1px solid #334155}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;max-width:950px;margin:auto}
+.project{background:#172238;padding:25px;border-radius:15px;border:1px solid #334155}
+.project h3{color:#38bdf8}
+.project p{color:#cbd5e1;margin-top:10px}
+.contact-text{text-align:center;color:#cbd5e1}
+footer{text-align:center;padding:25px;background:#111a2e;color:#94a3b8}
+@media(max-width:600px){
+header{flex-direction:column;gap:12px}
+nav a{margin:0 7px;font-size:13px}
+section{padding:50px 6%}
 }
 </style>
 </head>
-
 <body>
 
 <header>
-  <div class="logo">Gunesh.</div>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<div class="logo">Gunesh.</div>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
 <div class="hero">
-  <p>HELLO, WELCOME TO MY PORTFOLIO</p>
-
-  <h1>I'm <span>Gunesh Patil</span></h1>
-
-  <h3>Web Developer</h3>
-
-  <p>
-    I create modern and responsive websites
-    for businesses and brands.
-  </p>
-
-  <a class="btn" href="#projects">
-    Explore My Work
-  </a>
+<p>HELLO, WELCOME TO MY PORTFOLIO</p>
+<h1>I'm <span>Gunesh Patil</span></h1>
+<h3>Web Developer</h3>
+<p>I create modern and responsive websites for businesses and brands.</p>
+<a class="btn" href="#projects">Explore My Work</a>
 </div>
 
 <section id="about">
-  <h2>About Me</h2>
-
-  <div class="about">
-    <p>
-      Hello! I'm Gunesh Patil, an aspiring Web Developer.
-      I enjoy creating attractive websites and learning
-      new technologies. My goal is to build useful and
-      professional websites for businesses.
-    </p>
-  </div>
+<h2>About Me</h2>
+<div class="about">
+<p>Hello! I'm Gunesh Patil, an aspiring Web Developer. I enjoy creating attractive websites and learning new technologies. My goal is to build useful and professional websites for businesses.</p>
+</div>
 </section>
 
 <section id="skills">
-  <h2>My Skills</h2>
-
-  <div class="skills">
-    <div class="skill">HTML</div>
-    <div class="skill">CSS</div>
-    <div class="skill">JavaScript</div>
-    <div class="skill">Web Design</div>
-    <div class="skill">Responsive Design</div>
-  </div>
+<h2>My Skills</h2>
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Web Design</div>
+<div class="skill">Responsive Design</div>
+</div>
 </section>
 
 <section id="projects">
-  <h2>My Projects</h2>
+<h2>My Projects</h2>
+<div class="projects">
 
-  <div class="project">
-    <h3>Narikelam Cafe Website</h3>
+<div class="project">
+<h3>Narikelam Cafe Website</h3>
+<p>A self-initiated demo website concept for a cafe in Kolhapur, created using AI tools. This is not an official cafe website.</p>
+<a class="btn" href="https://narikelam-cafe-tarabai-park-kolhapur.ai.studio" target="_blank" rel="noopener">View Live Website</a>
+</div>
 
-    <p>
-      A self-initiated demo website concept for a cafe
-      in Kolhapur, created using AI tools.
-      This is a demo project, not an official cafe website.
-    </p>
+<div class="project">
+<h3>Saisha's Cafe Website</h3>
+<p>A self-initiated cafe website project, designed and published by me using AI tools. This is an independent portfolio project, not an official cafe website.</p>
+<a class="btn" href="https://saisha-s-cafe.ai.studio" target="_blank" rel="noopener">View Live Website</a>
+</div>
 
-    <a class="btn"
-       href="https://narikelam-cafe-tarabai-park-kolhapur.ai.studio"
-       target="_blank"
-       rel="noopener">
-       View Live Demo
-    </a>
-  </div>
+</div>
 </section>
 
 <section id="contact">
-  <h2>Contact Me</h2>
-
-  <div class="contact-text">
-    <p>
-      Have a project in mind?
-      Let's work together!
-    </p>
-
-    <a class="btn"
-       href="https://wa.me/918766539527"
-       target="_blank"
-       rel="noopener">
-       Chat With Me on WhatsApp
-    </a>
-  </div>
+<h2>Contact Me</h2>
+<div class="contact-text">
+<p>Have a project in mind? Let's work together!</p>
+<a class="btn" href="https://wa.me/918766539527" target="_blank" rel="noopener">Chat With Me on WhatsApp</a>
+</div>
 </section>
 
 <footer>
-  <p>© 2026 Gunesh Patil | My Portfolio</p>
+<p>© 2026 Gunesh Patil | My Portfolio</p>
 </footer>
 
 </body>
