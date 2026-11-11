@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Gunesh Patil | Web Developer</title>
 
 <style>
@@ -21,17 +23,18 @@ body {
 }
 
 header {
-  padding: 22px 8%;
+  padding: 20px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #111a2e;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: bold;
   color: #38bdf8;
 }
@@ -39,7 +42,12 @@ header {
 nav a {
   color: white;
   text-decoration: none;
-  margin-left: 18px;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #38bdf8;
 }
 
 .hero {
@@ -61,9 +69,14 @@ nav a {
   color: #38bdf8;
 }
 
+.hero h3 {
+  color: #cbd5e1;
+}
+
 .hero p {
   color: #cbd5e1;
   max-width: 600px;
+  margin-top: 10px;
 }
 
 .btn {
@@ -73,7 +86,13 @@ nav a {
   padding: 12px 25px;
   border-radius: 8px;
   text-decoration: none;
-  margin-top: 25px;
+  margin-top: 22px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0369a1;
+  transform: translateY(-3px);
 }
 
 section {
@@ -117,9 +136,18 @@ h2 {
   border: 1px solid #334155;
 }
 
+.project h3 {
+  color: #38bdf8;
+}
+
 .project p {
   color: #cbd5e1;
   margin-top: 10px;
+}
+
+.contact-text {
+  text-align: center;
+  color: #cbd5e1;
 }
 
 footer {
@@ -128,6 +156,22 @@ footer {
   background: #111a2e;
   color: #94a3b8;
 }
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav a {
+    margin: 0 7px;
+    font-size: 13px;
+  }
+
+  section {
+    padding: 50px 6%;
+  }
+}
 </style>
 </head>
 
@@ -135,23 +179,35 @@ footer {
 
 <header>
   <div class="logo">Gunesh.</div>
+
   <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <div class="hero">
   <p>HELLO, WELCOME TO MY PORTFOLIO</p>
+
   <h1>I'm <span>Gunesh Patil</span></h1>
+
   <h3>Web Developer</h3>
-  <p>I create modern and responsive websites for businesses and brands.</p>
-  <a class="btn" href="#projects">Explore My Work</a>
+
+  <p>
+    I create modern and responsive websites
+    for businesses and brands.
+  </p>
+
+  <a class="btn" href="#projects">
+    Explore My Work
+  </a>
 </div>
 
 <section id="about">
   <h2>About Me</h2>
+
   <div class="about">
     <p>
       Hello! I'm Gunesh Patil, an aspiring Web Developer.
@@ -164,6 +220,7 @@ footer {
 
 <section id="skills">
   <h2>My Skills</h2>
+
   <div class="skills">
     <div class="skill">HTML</div>
     <div class="skill">CSS</div>
@@ -175,17 +232,39 @@ footer {
 
 <section id="projects">
   <h2>My Projects</h2>
+
   <div class="project">
     <h3>Narikelam Cafe Website</h3>
+
     <p>
       A self-initiated demo website concept for a cafe
       in Kolhapur, created using AI tools.
       This is a demo project, not an official cafe website.
     </p>
+
     <a class="btn"
-       href="https://narikelam-cafe-tarabai-park-kolhapur.ai.sdio"
-       target="_blank">
+       href="https://narikelam-cafe-tarabai-park-kolhapur.ai.studio"
+       target="_blank"
+       rel="noopener">
        View Live Demo
+    </a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <div class="contact-text">
+    <p>
+      Have a project in mind?
+      Let's work together!
+    </p>
+
+    <a class="btn"
+       href="https://wa.me/918766539527"
+       target="_blank"
+       rel="noopener">
+       Chat With Me on WhatsApp
     </a>
   </div>
 </section>
@@ -193,16 +272,6 @@ footer {
 <footer>
   <p>© 2026 Gunesh Patil | My Portfolio</p>
 </footer>
-<section id="contact">
-  <h2>Contact Me</h2>
-  <div class="about">
-    <p>Have a project in mind? Let's work together!</p>
-    <a class="btn"
-       href="https://wa.me/918766539527"
-       target="_blank">
-       Chat With Me on WhatsApp
-    </a>
-  </div>
-</section>
+
 </body>
 </html>
